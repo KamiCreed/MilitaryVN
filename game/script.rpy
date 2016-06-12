@@ -5,16 +5,65 @@
 
 # Declare characters used by this game.
 # define e = Character('Eileen', color="#c8ffc8")
-define test = Character('Char A', color='#c8ffc8')
+init:
+    define g1 = DynamicCharacter('aaa', color='#c8ffc8')
+    define g2 = Character('BBB', color='#ff0505')
+    define g3 = Character('CCC', color='#00cbff')
+    define t = Character('Generic Soldier', color='#850000')
+    define mc = DynamicCharacter('main_char', color='#2b00ff')
 
 # The game starts here.
 label start:
-    "I'll ask her..."
+    $ aaa = '???'
+    $ g1Name = 'AAA'
+    $ main_char = ''
+    $ revealed = False
 
-    "Me" "Um... will you..."
-    "Me" "Will you be my artist for a visual novel?"
+    "It all started when..."
 
-    "Silence."
-    "She is shocked, and then..."
+    g1 "Watch out grenade!"
 
-    "Sylvie" "Sure, but what is a \"visual novel?\""
+    "BOOM!!!"
+
+    g1 "Are you OK?"
+
+menu:
+    "Yea, I'm fine.":
+        g1 "Well, good."
+        jump name
+
+    "Are you stupid? I almost got blown away!":
+        g1 "Well, if you can yell so loudly, you must be feeling fine."
+        jump name
+
+label name:
+    g1 "Come on. Get up. Good."
+
+    g1 "Watch out for the artillery shots!"
+
+    g1 "Go! Go! Go!"
+
+    "The two soldiers barge into an abandoned building..."
+
+    "Nobody is there..."
+
+    g1 "Looks like we're safe for now."
+
+    $ aaa = g1Name
+    g1 "I haven't introduced myself. My name is %(aaa)s."
+
+    g1 "And your name is?"
+
+    $ main_char = renpy.input("What is your name?")
+
+menu:
+    "My name is %(main_char)s. Nice to meet you.":
+        g1 "Nice to meet you too, %(main_char)s"
+        jump after_building
+
+    "I am %(main_char)s. You better remember it, a*****e":
+        g1 "Well, f*** you too, %(main_char)s. But we need to work together if we are going to survive, OK? OK."
+        jump after_building
+
+label after_building:
+    g1 "Let's get out of here now. They will probably find us eventually if we stay here."
