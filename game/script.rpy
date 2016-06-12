@@ -62,7 +62,7 @@ label name:
 
 menu:
     "My name is %(main_char)s. Nice to meet you.":
-        g1 "Nice to meet you too, %(main_char)s"
+        g1 "Nice to meet you too, %(main_char)s."
         jump after_building
 
     "I am %(main_char)s. You better remember it, a*****e":
