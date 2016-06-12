@@ -258,26 +258,34 @@ screen file_picker():
 
         has vbox
 
-        # The buttons at the top allow the user to pick a
-        # page of files.
-        hbox:
-            style_group "file_picker_nav"
+        # This grid is here to allow for an X button at the end of the screen
+        grid 2 1:
+            xfill True
+            # The buttons at the top allow the user to pick a
+            # page of files.
+            hbox:
+                style_group "file_picker_nav"
 
-            textbutton _("Previous"):
-                action FilePagePrevious()
+                textbutton _("Previous"):
+                    action FilePagePrevious()
 
-            textbutton _("Auto"):
-                action FilePage("auto")
+                textbutton _("Auto"):
+                    action FilePage("auto")
 
-            textbutton _("Quick"):
-                action FilePage("quick")
+                textbutton _("Quick"):
+                    action FilePage("quick")
 
-            for i in range(1, 9):
-                textbutton str(i):
-                    action FilePage(i)
+                for i in range(1, 9):
+                    textbutton str(i):
+                        action FilePage(i)
 
-            textbutton _("Next"):
-                action FilePageNext()
+                textbutton _("Next"):
+                    action FilePageNext()
+
+            hbox:
+                xalign 1.0
+                textbutton _("X"):
+                    action Hide("menu")
 
         $ columns = 2
         $ rows = 5
@@ -558,4 +566,3 @@ init -2:
         selected_idle_color "#cc08"
         selected_hover_color "#cc0"
         insensitive_color "#4448"
-

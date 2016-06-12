@@ -7,15 +7,19 @@
 # define e = Character('Eileen', color="#c8ffc8")
 init:
     define g1 = DynamicCharacter('aaa', color='#c8ffc8')
-    define g2 = Character('BBB', color='#ff0505')
-    define g3 = Character('CCC', color='#00cbff')
+    define g2 = DynamicCharacter('bbb', color='#ff0505')
+    define g3 = DynamicCharacter('ccc', color='#00cbff')
     define t = Character('Generic Soldier', color='#850000')
     define mc = DynamicCharacter('main_char', color='#2b00ff')
 
+    $_game_menu_screen = "navigation"
+
 # The game starts here.
 label start:
-    $ aaa = '???'
+    $ aaa = bbb = ccc = '???'
     $ g1Name = 'AAA'
+    $ g2Name = 'BBB'
+    $ g3Name = 'CCC'
     $ main_char = ''
     $ revealed = False
 
@@ -64,6 +68,3 @@ menu:
     "I am %(main_char)s. You better remember it, a*****e":
         g1 "Well, f*** you too, %(main_char)s. But we need to work together if we are going to survive, OK? OK."
         jump after_building
-
-label after_building:
-    g1 "Let's get out of here now. They will probably find us eventually if we stay here."
