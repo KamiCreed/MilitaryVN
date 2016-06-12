@@ -8,7 +8,7 @@
 init:
     define g1 = DynamicCharacter('aaa', color='#c8ffc8')
     define g2 = DynamicCharacter('bbb', color='#ff0505')
-    define g3 = DynamicCharacter('ccc', color='#00cbff')
+    define g3 = DynamicCharacter('ccc', color='#77e3ff')
     define t = Character('Generic Soldier', color='#850000')
     define mc = DynamicCharacter('main_char', color='#2b00ff')
 

@@ -20,10 +20,32 @@ label after_building:
 
     g3 "No, I'm fine. This isn't really my blood."
 
-    g1 "OK. Well, my name is %(ccc)s, and this over here is %(main_char)s."
+    g1 "OK. Well, my name is %(aaa)s, and this over here is %(main_char)s."
 
-    g3 "%(ccc)s and %(main_char)s. I think I got it."
+    g3 "%(aaa)s and %(main_char)s. I think I got it."
 
     g3 "What are we going to do, now?"
 
     g1 "Well, we were going to get out of this building before you suddenly barged in."
+
+    g3 "Sorry about that..."
+
+    g1 "Whatever. Let's just get out of here."
+
+    "The group of three sneak out through the back door with %(aaa)s taking point followed by %(main_char)s and %(ccc)s."
+
+    "There, they are greeted by the complete destruction of the city."
+
+    g1 "Hmph. This was probably going to happen eventually."
+
+    g3 "How could you say that? This city used be such a bright and happy place."
+
+menu:
+    "I would've liked to see such a place. Probably would've been a good place to live in.":
+        g3 "Yes, I loved this city."
+
+    "Yeah, right. No place can ever be bright and happy, when people are by nature absolutely greedy.":
+        g3 "That's kind of mean. Not everyone is greedy by heart, you know. My neighbors were all such good people."
+
+label outside:
+    g1 "Cut the chitter-chatter we have to get moving."
