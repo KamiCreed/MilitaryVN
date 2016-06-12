@@ -15,6 +15,7 @@ init:
 # The game starts here.
 label start:
     $ aaa = '???'
+    $ g1Name = 'AAA'
     $ main_char = ''
     $ revealed = False
 
@@ -48,19 +49,19 @@ label name:
 
     g1 "Looks like we're safe for now."
 
-    $ aaa = "AAA"
-    g1 "I haven't introduced myself. My name is %(aaa)s. Nice to meet you."
+    $ aaa = g1Name
+    g1 "I haven't introduced myself. My name is %(aaa)s."
 
     g1 "And your name is?"
 
     $ main_char = renpy.input("What is your name?")
 
 menu:
-    "My name is %(main_char)s. Nice to meet you, too.":
-        g1 "Yes. hello, %(main_char)s"
+    "My name is %(main_char)s. Nice to meet you.":
+        g1 "Nice to meet you too, %(main_char)s"
         jump after_building
 
-    "My name is %(main_char)s. You better remember it, a*****e":
+    "I am %(main_char)s. You better remember it, a*****e":
         g1 "Well, f*** you too, %(main_char)s. But we need to work together if we are going to survive, OK? OK."
         jump after_building
 
