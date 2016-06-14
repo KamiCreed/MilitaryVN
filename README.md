@@ -1,4 +1,4 @@
-# VNGame
+# MilitaryVN
 ------
 Currently the only way to run the game is through Ren'Py:
 
