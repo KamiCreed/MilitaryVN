@@ -15,3 +15,5 @@ Currently the only way to run the game is through Ren'Py:
 Alternatively to 3. is to fork the project and pull the project to the empty project folder using git.
 
 When you are finished editing your files and pushed it to your repository, throw up a pull request, and I'll take a look at it and give feedback.
+
+***All of the images currently are temporary.***
