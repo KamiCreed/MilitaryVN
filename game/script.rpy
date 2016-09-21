@@ -8,7 +8,6 @@
 init:
     image g1Img = "images/Military_Girl.png"
     image bg black = "images/Black.jpg"
-    image bg des_city = "images/desolate_city.jpg"
     define g1 = DynamicCharacter('aaa', color='#c8ffc8')
     define g2 = DynamicCharacter('bbb', color='#ff0505')
     define g3 = DynamicCharacter('ccc', color='#77e3ff')
@@ -16,6 +15,7 @@ init:
     define mc = DynamicCharacter('main_char', color='#2b00ff')
 
     $_game_menu_screen = "navigation"
+    $ flash = Fade(.25, 0, .75, color="#fff")
 
 # The game starts here.
 label start:
@@ -37,6 +37,7 @@ label start:
 
     pause .5
 
+    with flash
     "BOOM!!!"
 
     show g1Img
