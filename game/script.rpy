@@ -25,6 +25,8 @@ label start:
     $ main_char = ''
     $ revealed = False
 
+    scene bg black
+    
     "It all started when..."
 
     show g1Img
