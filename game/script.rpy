@@ -8,6 +8,9 @@
 init:
     image g1Img = "images/Military_Girl.png"
     image bg black = "images/Black.jpg"
+    image bg city = "images/battle_city.jpg"
+    image bg building = "images/abandoned_building.jpg"
+
     define g1 = DynamicCharacter('aaa', color='#c8ffc8')
     define g2 = DynamicCharacter('bbb', color='#ff0505')
     define g3 = DynamicCharacter('ccc', color='#77e3ff')
@@ -59,13 +62,24 @@ menu:
 label name:
     g1 "Come on. Get up. Good."
 
+    scene bg city
+    show g1Img
+    with Dissolve(.5)
+
     g1 "Watch out for the artillery shots!"
 
     g1 "Go! Go! Go!"
 
+    hide g1Img
+
     "The two soldiers barge into an abandoned building..."
 
+    scene bg building
+    with Dissolve(.5)
+
     "Nobody is there..."
+
+    show g1Img
 
     g1 "Looks like we're safe for now."
 

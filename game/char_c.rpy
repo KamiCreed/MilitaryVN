@@ -4,9 +4,13 @@ init:
 label after_building:
     g1 "Let's get out of here now. They will probably find us eventually if we stay here."
 
+    hide g1Img
+
     "Bam!"
 
     "The door explodes, and a person barges through all covered in blood."
+
+    
 
     g3 "*gasp"
 
