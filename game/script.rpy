@@ -6,11 +6,6 @@
 # Declare characters used by this game.
 # define e = Character('Eileen', color="#c8ffc8")
 init:
-    image aaa = "images/Military_Girl.png"
-    image bg black = "images/Black.jpg"
-    image bg city = "images/battle_city.jpg"
-    image bg building = "images/abandoned_building.jpg"
-
     define g1 = DynamicCharacter('aaa', color='#c8ffc8')
     define g2 = DynamicCharacter('bbb', color='#ff0505')
     define g3 = DynamicCharacter('ccc', color='#77e3ff')

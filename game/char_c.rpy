@@ -1,7 +1,3 @@
-init:
-    image bg des_city = "images/desolate_city.jpg"
-    image ccc = "images/lab_coat_girl.png"
-
 label after_building:
     g1 "Let's get out of here now. They will probably find us eventually if we stay here."
 
