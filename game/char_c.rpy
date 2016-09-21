@@ -1,3 +1,6 @@
+init:
+    image bg des_city = "images/desolate_city.jpg"
+
 label after_building:
     g1 "Let's get out of here now. They will probably find us eventually if we stay here."
 

@@ -8,6 +8,7 @@
 init:
     image g1Img = "images/Military_Girl.png"
     image bg black = "images/Black.jpg"
+    image bg des_city = "images/desolate_city.jpg"
     define g1 = DynamicCharacter('aaa', color='#c8ffc8')
     define g2 = DynamicCharacter('bbb', color='#ff0505')
     define g3 = DynamicCharacter('ccc', color='#77e3ff')
@@ -26,13 +27,22 @@ label start:
     $ revealed = False
 
     scene bg black
-    
+
     "It all started when..."
 
     show g1Img
     g1 "Watch out grenade!"
+    hide g1Img
+    with Dissolve(.5)
+
+    pause .5
 
     "BOOM!!!"
+
+    show g1Img
+    with Dissolve(.5)
+
+    pause .5
 
     g1 "Are you OK?"
 
