@@ -6,7 +6,7 @@
 # Declare characters used by this game.
 # define e = Character('Eileen', color="#c8ffc8")
 init:
-    image g1Img = "images/Military_Girl.png"
+    image aaa = "images/Military_Girl.png"
     image bg black = "images/Black.jpg"
     image bg city = "images/battle_city.jpg"
     image bg building = "images/abandoned_building.jpg"
@@ -33,9 +33,9 @@ label start:
 
     "It all started when..."
 
-    show g1Img
+    show aaa
     g1 "Watch out grenade!"
-    hide g1Img
+    hide aaa
     with Dissolve(.5)
 
     pause .5
@@ -43,7 +43,7 @@ label start:
     with flash
     "BOOM!!!"
 
-    show g1Img
+    show aaa
     with Dissolve(.5)
 
     pause .5
@@ -63,14 +63,14 @@ label name:
     g1 "Come on. Get up. Good."
 
     scene bg city
-    show g1Img
+    show aaa
     with Dissolve(.5)
 
     g1 "Watch out for the artillery shots!"
 
     g1 "Go! Go! Go!"
 
-    hide g1Img
+    hide aaa
 
     "The two soldiers barge into an abandoned building..."
 
@@ -79,7 +79,7 @@ label name:
 
     "Nobody is there..."
 
-    show g1Img
+    show aaa
 
     g1 "Looks like we're safe for now."
 

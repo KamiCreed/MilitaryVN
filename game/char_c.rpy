@@ -1,18 +1,22 @@
 init:
     image bg des_city = "images/desolate_city.jpg"
+    image ccc = "images/lab_coat_girl.png"
 
 label after_building:
     g1 "Let's get out of here now. They will probably find us eventually if we stay here."
 
-    hide g1Img
+    hide aaa
 
     "Bam!"
 
     "The door explodes, and a person barges through all covered in blood."
 
-    
+    show ccc
 
     g3 "*gasp"
+
+    show ccc at right
+    show aaa at left
 
     g1 "I want to see your hands up. I don't recognize your uniform. Which side are you on?"
 
@@ -43,7 +47,17 @@ label after_building:
 
     "There, they are greeted by the complete destruction of the city."
 
+    scene bg des_city
+    with dissolve
+
+    pause(2)
+
+    show aaa
+
     g1 "Hmph. This was probably going to happen eventually."
+
+    show aaa at left
+    show ccc at right
 
     g3 "How could you say that? This city used be such a bright and happy place."
 
