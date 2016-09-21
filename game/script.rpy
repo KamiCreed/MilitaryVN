@@ -6,7 +6,8 @@
 # Declare characters used by this game.
 # define e = Character('Eileen', color="#c8ffc8")
 init:
-    image g1Img = "Military_Girl.png"
+    image g1Img = "images/Military_Girl.png"
+    image bg black = "images/Black.jpg"
     define g1 = DynamicCharacter('aaa', color='#c8ffc8')
     define g2 = DynamicCharacter('bbb', color='#ff0505')
     define g3 = DynamicCharacter('ccc', color='#77e3ff')
@@ -26,6 +27,7 @@ label start:
 
     "It all started when..."
 
+    show g1Img
     g1 "Watch out grenade!"
 
     "BOOM!!!"
