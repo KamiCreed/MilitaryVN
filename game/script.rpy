@@ -31,7 +31,7 @@ label start:
     show aaa
     g1 "Watch out grenade!"
     hide aaa
-    with Dissolve(.5)
+    with dissolve
 
     pause .5
 
@@ -39,7 +39,7 @@ label start:
     "BOOM!!!"
 
     show aaa
-    with Dissolve(.5)
+    with dissolve
 
     pause .5
 
@@ -59,7 +59,7 @@ label name:
 
     scene bg city
     show aaa
-    with Dissolve(.5)
+    with dissolve
 
     g1 "Watch out for the artillery shots!"
 
@@ -70,7 +70,7 @@ label name:
     "The two soldiers barge into an abandoned building..."
 
     scene bg building
-    with Dissolve(.5)
+    with dissolve
 
     "Nobody is there..."
 
