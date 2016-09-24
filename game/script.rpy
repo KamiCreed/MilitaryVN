@@ -62,6 +62,13 @@ label name:
     with dissolve
 
     g1 "Watch out for the artillery shots!"
+    with vpunch
+
+    show aaa:
+        linear .5 xzoom 1.1 yzoom .9
+        pause .5
+        linear .25 xzoom .9 yzoom 1.1
+        linear .1 xzoom 1 yzoom 1
 
     g1 "Go! Go! Go!"
 
