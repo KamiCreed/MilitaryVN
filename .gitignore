@@ -1,6 +1,7 @@
-game/saves
-game/cache
-log.txt
-errors.txt
+*.txt
 tmp/
-traceback.txt
+game/*.bak
+game/*.rpyb
+game/*.rpyc
+game/saves/
+game/assets/
