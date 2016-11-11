@@ -1,6 +1,8 @@
 # MilitaryVN
 ------
-Currently the only way to run the game is through Ren'Py:
+Now, I have a zip file for the release. Just download that, extract it, and run the exe inside.
+
+Another way to run the game is through Ren'Py:
 
 1. Create a project in Ren'Py
 
